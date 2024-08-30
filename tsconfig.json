@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Versão do JavaScript para compilar
+    "module": "commonjs", // Sistema de módulos
+    "outDir": "./dist", // Diretório para arquivos compilados
+    "rootDir": "./src", // Diretório dos arquivos fontes
+    "strict": true, // Habilita todas as verificações de tipo estritas
+    "esModuleInterop": true, // Permite interoperabilidade com módulos ES6
+    "skipLibCheck": true // Ignora verificações de tipo em arquivos de declaração
+  },
+  "include": ["src/**/*.ts"], // Diretórios para incluir na compilação
+  "exclude": ["node_modules"] // Diretórios para excluir da compilação
+}

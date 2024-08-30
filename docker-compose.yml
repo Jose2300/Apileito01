@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      target: build # Use a etapa de build se estiver no modo de desenvolvimento
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules # Não mapeia o diretório node_modules para evitar problemas de sincronização
+    environment:
+      - NODE_ENV=development
+    command: npm run dev # Assumindo que você tem um script de desenvolvimento no package.json
